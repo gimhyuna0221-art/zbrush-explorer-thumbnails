@@ -1,0 +1,8 @@
+* text=auto
+*.cmd text eol=crlf
+*.cpp text eol=lf
+*.h text eol=lf
+*.ps1 text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.png binary

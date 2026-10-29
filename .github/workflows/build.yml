@@ -1,0 +1,46 @@
+name: Windows build and synthetic tests
+
+"on":
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PACKAGE_VERSION: "0.2.0"
+
+jobs:
+  windows-x64:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Check out source
+        # Official actions/checkout v7.0.1, verified 2026-10-29.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Build, run synthetic tests, and package Windows x64
+        run: ./scripts/Build-Package.ps1 -Version $env:PACKAGE_VERSION
+
+      - name: Upload the tested package and checksum
+        # Official actions/upload-artifact v7.0.2, verified 2026-10-29.
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: zbrush-explorer-thumbnails-windows-x64
+          path: |
+            dist/ZBrush-Explorer-Thumbnails-${{ env.PACKAGE_VERSION }}-win-x64.zip
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14

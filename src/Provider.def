@@ -1,0 +1,4 @@
+LIBRARY ZBrushThumbnailProvider
+EXPORTS
+    DllGetClassObject PRIVATE
+    DllCanUnloadNow PRIVATE

@@ -1,0 +1,18 @@
+/build/
+/dist/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.user
+.vs/
+# Never commit models, recovery data, machine logs or compiled payloads.
+*.[zZ][tT][lL]
+*.[zZ][pP][rR]
+*.exe
+*.dll
+*.zip
+*.log
+*.journal
+__pycache__/
