@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1190" viewBox="0 0 1120 1190"><rect width="1120" height="1190" fill="#f2f5fa"/><g font-family="Noto Sans CJK KR, sans-serif">
+<text x="48" y="60" font-size="32" font-weight="bold" fill="#15243c">설치는 이 순서로 따라 하세요</text>
+<text x="48" y="98" font-size="20" fill="#506078">설명용 도식 · 실제 실행 화면이나 설치 성공 증거가 아닙니다</text>
+<rect x="32" y="130" width="1056" height="232" rx="18" fill="white"/>
+<circle cx="76" cy="174" r="23" fill="#245bca"/>
+<text x="76" y="182" text-anchor="middle" font-size="24" fill="white">1</text>
+<text x="115" y="182" font-size="27" font-weight="bold" fill="#15243c">설치용 ZIP 받기</text>
+<text x="115" y="216" font-size="20" fill="#506078">Releases 페이지 본문의 파란 링크를 누르세요.</text>
+<text x="115" y="255" font-size="21" fill="#245bca">Download installer ZIP (0.2.0)</text>
+<text x="115" y="285" font-size="21" fill="#68778c">Source code (zip)  ← 설치용 파일 아님</text>
+<text x="115" y="344" font-size="19" fill="#506078">파일 이름 끝: 0.2.0-win-x64.zip</text>
+<rect x="32" y="382" width="1056" height="232" rx="18" fill="white"/>
+<circle cx="76" cy="426" r="23" fill="#245bca"/>
+<text x="76" y="434" text-anchor="middle" font-size="24" fill="white">2</text>
+<text x="115" y="434" font-size="27" font-weight="bold" fill="#15243c">압축을 모두 풀기</text>
+<text x="115" y="468" font-size="20" fill="#506078">ZIP을 우클릭 → 모두 압축 풀기</text>
+<text x="115" y="507" font-size="21" fill="#245bca">ZBrushThumbnailInstaller.exe</text>
+<text x="115" y="537" font-size="21" fill="#263950">ZBrushThumbnailProvider.dll</text>
+<text x="115" y="596" font-size="19" fill="#506078">두 파일을 같은 폴더에 그대로 두세요.</text>
+<rect x="32" y="634" width="1056" height="232" rx="18" fill="white"/>
+<circle cx="76" cy="678" r="23" fill="#245bca"/>
+<text x="76" y="686" text-anchor="middle" font-size="24" fill="white">3</text>
+<text x="115" y="686" font-size="27" font-weight="bold" fill="#15243c">설치 버튼 누르기</text>
+<text x="115" y="720" font-size="20" fill="#506078">EXE를 일반 권한으로 열고 아래 버튼을 누르세요.</text>
+<text x="115" y="759" font-size="21" fill="#245bca">Install thumbnails</text>
+<text x="115" y="789" font-size="21" fill="#263950">EXPLICIT INSTALL - completed</text>
+<text x="115" y="819" font-size="21" fill="#263950">Installed: …</text>
+<text x="115" y="848" font-size="19" fill="#506078">창을 열기만 해서는 설치되지 않습니다.</text>
+<rect x="32" y="886" width="1056" height="232" rx="18" fill="white"/>
+<circle cx="76" cy="930" r="23" fill="#245bca"/>
+<text x="76" y="938" text-anchor="middle" font-size="24" fill="white">4</text>
+<text x="115" y="938" font-size="27" font-weight="bold" fill="#15243c">탐색기에서 확인하기</text>
+<text x="115" y="972" font-size="20" fill="#506078">ZTL / ZPR 폴더를 열고 보기 크기를 바꾸세요.</text>
+<text x="115" y="1011" font-size="21" fill="#245bca">보기 → 큰 아이콘 / 아주 큰 아이콘</text>
+<text x="115" y="1041" font-size="21" fill="#263950">기존 아이콘만 보이면 아래 문제 해결 확인</text>
+<text x="115" y="1100" font-size="19" fill="#506078">설치 완료와 미리보기 갱신은 별개입니다.</text>
+<text x="48" y="1170" font-size="18" fill="#506078">Windows x64 전용 · 관리자 권한 불필요 · 보안 경고를 무조건 건너뛰지 마세요</text></g></svg>

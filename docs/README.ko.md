@@ -17,12 +17,57 @@ ZBrush를 실행하거나 모델 전체를 렌더링하지 않고, 파일 앞부
 
 이전 프로토타입은 Windows x64·ZBrush **2023.2.2**에서 별도 시험 파일의 ZTL Save As와 ZPR Save 후 갱신을 확인했습니다. **공개 0.2.0은 새 공급자 ID와 이식 가능한 설치기를 사용하며, 이 정확한 공개 패키지를 설치한 탐색기 통합 시험은 아직 하지 않았습니다.** 이전 결과가 모든 버전의 호환성을 뜻하지는 않습니다.
 
-## 설치
+## 처음 설치하는 분은 여기부터
 
-1. [Releases](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/releases)에서 Windows x64 ZIP을 받아 로컬 폴더에 모두 풉니다. ZIP 안에서 바로 실행하지 마세요.
-2. `ZBrushThumbnailInstaller.exe`를 엽니다. 창을 여는 것만으로 설치되지는 않습니다.
-3. **Install thumbnails**를 누르고 결과를 확인합니다. 설치 완료 메시지가 나와야 완료로 볼 수 있습니다.
-4. ZTL/ZPR 폴더를 열고 탐색기 보기를 **큰 아이콘** 또는 **아주 큰 아이콘**으로 바꿉니다. Windows 설정에서 썸네일 표시도 켜져 있어야 합니다.
+**[① 설치용 ZIP 바로 받기 (Windows x64 · 0.2.0)](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/raw/refs/tags/v0.2.0/downloads/v0.2.0/ZBrush-Explorer-Thumbnails-0.2.0-win-x64.zip)**
+
+코딩이나 Visual Studio 설치는 필요 없습니다. 아래 네 단계만 따라 하세요.
+
+![설치 순서: 설치용 ZIP 다운로드, 모두 압축 풀기, Install thumbnails 클릭, 탐색기 큰 아이콘 선택](assets/install-guide.ko.svg)
+
+> 위 이미지는 버튼과 순서를 쉽게 설명한 **도식**입니다. 실제 Windows 화면 캡처나 이 버전의 설치 성공 증거가 아닙니다. Windows 버전에 따라 메뉴 위치는 다를 수 있습니다.
+
+### 1. 설치용 ZIP을 받으세요
+
+위의 **설치용 ZIP 바로 받기**를 누릅니다. 파일 이름은 `ZBrush-Explorer-Thumbnails-0.2.0-win-x64.zip`입니다.
+
+[릴리스 페이지](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/releases/tag/v0.2.0)에서 받는다면 본문에 있는 **Download installer ZIP (0.2.0)**을 누르세요. 아래쪽 **Source code (zip)** / **Source code (tar.gz)**는 소스 코드 묶음이지 바로 실행할 설치 패키지가 아닙니다.
+
+### 2. ZIP을 우클릭하고 ‘모두 압축 풀기’를 누르세요
+
+압축이 풀린 폴더를 엽니다. 안에 있는 두 파일을 함께 둡니다.
+
+```text
+압축을 푼 폴더
+├─ ZBrushThumbnailInstaller.exe  ← 이 파일을 더블클릭
+└─ ZBrushThumbnailProvider.dll   ← 지우거나 따로 옮기지 않기
+```
+
+다른 안내 파일이 함께 있어도 정상입니다. **ZIP 안에서 실행하거나 EXE 하나만 다른 곳으로 옮겨 실행하지 마세요.** ‘관리자 권한으로 실행’은 필요 없습니다.
+
+### 3. ‘Install thumbnails’를 누르고 결과를 확인하세요
+
+`ZBrushThumbnailInstaller.exe`를 더블클릭한 뒤 **Install thumbnails**를 누릅니다. 창을 여는 것만으로는 설치되지 않습니다.
+
+- `EXPLICIT INSTALL - completed`와 `Installed:`로 시작하는 결과가 표시되는지 확인합니다.
+- `not completed / refused` 또는 오류가 보이면 설치 완료가 아닙니다. 반복해서 누르거나 레지스트리를 직접 바꾸지 말고, 아래 문제 해결을 확인하세요.
+- 설치 완료 후에는 **Close**로 창을 닫아도 됩니다.
+
+> 이 배포 파일은 **디지털 서명되지 않은 실험판**입니다. Windows가 경고하면 무조건 ‘실행’을 누르거나 보안 기능을 끄지 마세요. 다운로드 출처와 [공개 체크섬](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/blob/v0.2.0/downloads/v0.2.0/SHA256SUMS.txt)을 확인하고, 판단하기 어렵다면 멈춘 뒤 경고 문구를 알려 주세요.
+
+### 4. ZTL·ZPR 폴더를 ‘큰 아이콘’으로 보세요
+
+평소 작업 파일이 있는 폴더를 열고 탐색기의 **보기 → 큰 아이콘** 또는 **아주 큰 아이콘**을 선택합니다. 지원하는 내장 미리보기가 있는 파일이면 모델 이미지가 표시될 수 있습니다.
+
+일반 아이콘만 보여도 파일이 손상됐다는 뜻은 아닙니다. 아래 순서로 확인하세요.
+
+| 보이는 상황 | 먼저 할 일 |
+| --- | --- |
+| 설치됐는지 모르겠어요 | 설치기에서 **Check status**를 누르고 결과를 확인하세요. |
+| 설치됐는데 아이콘만 보여요 | 큰 아이콘 보기인지, Windows의 썸네일 표시가 켜져 있는지 확인하세요. 폴더 옵션의 ‘아이콘은 항상 표시하고 미리 보기는 표시하지 않음’ 항목이 켜져 있다면 미리보기가 숨겨집니다. |
+| 어떤 파일만 안 보여요 | 해당 파일의 내장 이미지가 없거나 지원하지 않는 형식일 수 있습니다. 원본 모델을 덮어쓰며 시험하지 마세요. |
+| 예전 이미지가 보여요 | Windows에 이전 미리보기가 남을 수 있습니다. 이 프로그램은 캐시를 강제로 지우거나 탐색기를 재시작하지 않습니다. |
+| 충돌·거부·오류가 나와요 | 다른 처리기를 임의로 지우지 마세요. 개인 경로를 가린 오류 문구를 [Issues](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/issues)에 남겨 주세요. |
 
 설치 위치:
 
@@ -83,3 +128,4 @@ powershell -NoProfile -File scripts\Build-Package.ps1
 [Issues](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/issues)에 패키지 버전, Windows 빌드·아키텍처, ZBrush 버전, 확장자, 오류 문구를 남겨 주세요. 계정명과 개인 경로는 지워 주세요. **개인 모델·복구 파일·전체 설치 기록·작업 내용이 담긴 화면은 올리지 마세요.** 가능하면 직접 만든 작은 합성 예제로 재현해 주세요.
 
 코드는 [MIT](../LICENSE)로 공개합니다. 디코더 연구에 참고한 Jens Ch. Restemeier의 `zbrformat` 출처와 MIT 고지는 [THIRD_PARTY_NOTICES.txt](../THIRD_PARTY_NOTICES.txt)에 있습니다. 제작사 이미지나 모델은 배포하지 않습니다. 공식 ZBrush 제품과는 별개인 커뮤니티 프로젝트입니다.
+

@@ -2,7 +2,7 @@
 
 See the model preview inside a `.ztl` or `.zpr` file directly in Windows File Explorer.
 
-[한국어 안내](docs/README.ko.md) · [Testing and compatibility](docs/TESTING.md) · [MIT license](LICENSE)
+[한국어 그림 설치 안내 — 처음 사용하는 분은 여기부터](docs/README.ko.md#처음-설치하는-분은-여기부터) · [Testing and compatibility](docs/TESTING.md) · [MIT license](LICENSE)
 
 The provider reads the small preview already embedded in a supported ZBrush file. It does not open ZBrush, render the model, capture your screen, or create an image beside each model file.
 
@@ -87,3 +87,4 @@ Open an [issue](https://github.com/gimhyuna0221-art/zbrush-explorer-thumbnails/i
 Project code is available under the [MIT license](LICENSE). Decoder research was informed by Jens Ch. Restemeier's MIT-licensed `zbrformat`; its attribution and license are included in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt). No vendor artwork or model assets are bundled.
 
 This is an independent community project, not an official ZBrush product.
+
